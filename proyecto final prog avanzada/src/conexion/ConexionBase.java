@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class ConexionBase {
 
-    private static final String URL  = "jdbc:mysql://localhost:3306/harmonic_sound_store";
+    private static final String URL  = "jdbc:mysql://viaduct.proxy.rlwy.net:22497/railway";
     private static final String USER = "root";
-    private static final String PASS = "1234";
+    private static final String PASS = "UbqJAEFtqVmztFYMWzfROgFwykrcSfAz";
 
     private static Connection connection = null;
 
