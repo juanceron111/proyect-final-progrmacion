@@ -1,7 +1,7 @@
 import conexion.ConexionBase;
 import java.sql.Connection;
 
-public class App {
+public class Main {
     public static void main(String[] args) {
         
         System.out.println("Iniciando Harmonic Sound Store...");
