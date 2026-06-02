@@ -1,5 +1,10 @@
+package main;
+
+import Servidor.ServidorSocket;
 import conexion.ConexionBase;
 import java.sql.Connection;
+
+
 
 public class Main {
     public static void main(String[] args) {
@@ -15,5 +20,6 @@ public class Main {
         }
 
         ConexionBase.closeConnection();
+        ServidorSocket.main(args);
     }
 }
