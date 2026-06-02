@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #000;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                url('https://images.unsplash.com/photo-1511379938547-c1f69419868d');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+}
+
+#productos {
+    padding: 50px;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.producto {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.producto button {
+    margin-top: 10px;
+    padding: 10px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+}
+
+#carrito {
+    padding: 50px;
+    background: #1a1a1a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
