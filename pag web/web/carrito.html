@@ -2,18 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Carrito</title>
+    <title>Carrito | Harmonic</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>Carrito de Compras</h1>
+<header class="navbar">
+    <div class="logo">Harmonic</div>
+</header>
 
-<div id="carrito"></div>
+<a href="index.html" class="btn-regreso">← Volver a la tienda</a>
 
-<button onclick="comprar()">
-    Finalizar Compra
-</button>
+<div class="carrito-box">
+    <h1>Carrito de Compras</h1>
+
+    <div id="carrito" style="margin-bottom: 20px; text-align: left;"></div>
+
+    <button onclick="comprar()">
+        Finalizar Compra
+    </button>
+</div>
 
 <script src="js/carrito.js"></script>
 
