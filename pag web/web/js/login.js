@@ -15,11 +15,14 @@ function login() {
         .then(res => res.json())
         .then(data => {
             if (data.status === 'ok') {
-                // Guardar sesión
                 localStorage.setItem('usuario', data.nombre);
                 localStorage.setItem('rol', data.rol);
-                alert('Bienvenido ' + data.nombre + '!');
-                window.location.href = 'index.html';
+
+                if (data.rol === 'administrador') {
+                    window.location.href = 'admin/admin.html';
+                } else if (data.rol === 'VENDEDOR') {
+                    window.location.href = 'vendedor/vendedor.html';
+                }
             } else {
                 alert('Correo o contraseña incorrectos');
             }
