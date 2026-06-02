@@ -20,7 +20,7 @@ function login() {
 
                 if (data.rol === 'administrador') {
                     window.location.href = 'admin/admin.html';
-                } else if (data.rol === 'VENDEDOR') {
+                } else if (data.rol === 'vendedor') {
                     window.location.href = 'vendedor/vendedor.html';
                 }
             } else {
