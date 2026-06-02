@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración | Harmonic</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Harmonic Panel ADMIN</div>
+    <nav>
+        <a href="../login.html">Cerrar Sesión</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Visión Global del Negocio</h2>
+    
+    <div class="dashboard-grid">
+        <div class="stat-card">
+            <h3 id="stat-ingresos-mes">$0</h3>
+            <p>Ingresos del Mes</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="stat-total-productos">0</h3>
+            <p>Productos en Catálogo</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="stat-usuarios">0</h3>
+            <p>Vendedores Activos</p>
+        </div>
+    </div>
+
+    <h2>Administración</h2>
+    <div class="dashboard-grid">
+        <div class="producto-card" style="padding: 20px;">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Gestión de productos" style="height: 150px;">
+            <h3>Gestión de Productos</h3>
+            <p>Crear, editar o eliminar inventario.</p>
+            <button onclick="window.location.href='gestionarProductos.html'">Ir a Productos</button>
+        </div>
+        <div class="producto-card" style="padding: 20px;">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80" alt="Usuarios" style="height: 150px;">
+            <h3>Usuarios y Roles</h3>
+            <p>Administrar vendedores y accesos.</p>
+            <button onclick="window.location.href='gestionarUsuarios.html'">Ir a Usuarios</button>
+        </div>
+    </div>
+</div>
+
+<script src="../js/admin.js"></script>
+</body>
+</html>

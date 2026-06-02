@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Venta | Harmonic</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<a href="vendedor.html" class="btn-regreso">← Volver al Panel</a>
+
+<div class="container">
+    <div class="table-container">
+        <h2>Registrar Nueva Venta</h2>
+        
+        <div class="form-grid">
+            <div style="border-right: 1px solid #eee; padding-right: 20px;">
+                <h3>Datos del Cliente</h3>
+                <input type="text" placeholder="Nombre Completo" id="clienteNombre">
+                <input type="text" placeholder="Documento (C.C. o NIT)" id="clienteDoc">
+                <input type="tel" placeholder="Teléfono" id="clienteTel">
+            </div>
+
+            <div style="padding-left: 20px;">
+                <h3>Productos</h3>
+                <input type="text" placeholder="ID del producto..." id="inputBuscarProducto">
+                <div class="form-grid">
+                    <input type="number" placeholder="Cantidad" min="1" id="inputCantidad">
+                </div>
+                <button onclick="agregarProductoListado()" style="width: 100%; background-color: var(--primary-color);">+ Agregar Producto</button>
+            </div>
+        </div>
+
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+        <div style="text-align: right;">
+            <h3 id="totalVentaUI">Total: $0 COP</h3>
+            <select id="metodoPago" style="width: 200px; display: inline-block;">
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta (Datafono)</option>
+                <option value="transferencia">Transferencia</option>
+            </select>
+            <br>
+            <button onclick="confirmarVenta()">Confirmar Venta y Generar Factura</button>
+        </div>
+    </div>
+</div>
+
+<script src="../js/registrarVenta.js"></script>
+</body>
+</html>
