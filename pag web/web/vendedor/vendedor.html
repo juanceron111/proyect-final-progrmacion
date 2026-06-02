@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Vendedor | Harmonic</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Harmonic Panel Vendedor</div>
+    <nav>
+        <a href="../login.html">Cerrar Sesión</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Resumen del Día</h2>
+    
+    <div class="dashboard-grid">
+        <div class="stat-card">
+            <h3 id="stat-ventas-hoy">0</h3>
+            <p>Ventas Hoy</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="stat-ingresos">$0</h3>
+            <p>Ingresos (COP)</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="stat-productos">0</h3>
+            <p>Productos Vendidos</p>
+        </div>
+    </div>
+
+    <h2>Acciones Rápidas</h2>
+    <div class="dashboard-grid">
+        <div class="producto-card" style="padding: 20px;">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=400&q=80" alt="Caja registradora" style="height: 150px;">
+            <h3>Nueva Venta</h3>
+            <button onclick="window.location.href='registrarVenta.html'">Registrar Venta</button>
+        </div>
+        <div class="producto-card" style="padding: 20px;">
+            <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=400&q=80" alt="Inventario" style="height: 150px;">
+            <h3>Inventario</h3>
+            <button onclick="window.location.href='inventario.html'">Consultar Stock</button>
+        </div>
+        <div class="producto-card" style="padding: 20px;">
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=400&q=80" alt="Historial" style="height: 150px;">
+            <h3>Historial</h3>
+            <button onclick="window.location.href='historialVentas.html'">Ver Ventas</button>
+        </div>
+    </div>
+</div>
+
+<script src="../js/vendedor.js"></script>
+</body>
+</html>

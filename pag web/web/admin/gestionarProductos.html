@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionar Productos | Harmonic</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<a href="admin.html" class="btn-regreso">← Volver al Panel</a>
+
+<div class="container">
+    <div class="table-container" style="margin-bottom: 30px;">
+        <h2>Crear Nuevo Producto</h2>
+        <div class="form-grid">
+            <input type="text" id="prodNombre" placeholder="Nombre del Producto">
+            <input type="number" id="prodPrecio" placeholder="Precio ($ COP)">
+            <input type="number" id="prodStock" placeholder="Stock Inicial">
+            <input type="text" id="prodImagen" placeholder="URL de la imagen">
+        </div>
+        <button onclick="guardarProducto()">Guardar Producto</button>
+    </div>
+
+    <h2>Catálogo Completo</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-productos-admin">
+                </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../js/adminProductos.js"></script>
+</body>
+</html>
